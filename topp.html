@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/topp.css">
+
+
+</head>
+<header class="header" role="banner">
+    <div class="page-container">
+        <div class="page-container-inner">
+
+            <footer>
+                <ul class="menu-main">
+                    <li><a href="podbor.html">подбор</a></li>
+                    <li><a href="dobro.html">добро</a></li>
+                    <li><a href="vid.html">виды</a></li>
+                    <a href= "index.html"><img class="logo" src="assets/img/home-1-slider-img-2.png" height="82"></img> </a>
+                    <li><a href="topp.html">топ 9</a></li>
+                    <li><a href="recepti.html">рецепты</a></li>
+                    <li><a href="alko.html">алко</a></li>
+                </ul>
+            </footer>
+
+            <div>
+                <footer class = "welcom">
+                    <div><h2>welcom to coofe</h2></div>
+                </footer>
+                <footer class = "zagolovok">
+                    <div><h2>ТОП-9</h2></div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')">Показать все</button>
+    <button class="btn" onclick="filterSelection('nature')">Простые</button>
+    <button class="btn" onclick="filterSelection('cars')">Дорогие</button>
+    <button class="btn" onclick="filterSelection('people')">Элитные</button>
+</div>
+
+<div class="main">
+    <div class="row">
+
+        <div class="column nature">
+            <div class="content">
+                <img src="assets/img/aspresso.jpg" alt="Горы" style="width:100%">
+                <h3>Эспрессо</h3>
+                <p> Подается в небольших
+                    чашечках и традиционно
+                    считается самым крепким
+                    из кофейных напитков, в
+                    то время как на самом деле
+                    является одним из самых щадящих
+                    желудок и сердце. В процессе
+                    приготовления он теряет
+                    довольно много кофеина,
+                    при этом приобретая богатый
+                    вкусовой букет.</p>
+            </div>
+        </div>
+
+        <div class="column nature">
+            <div class="content">
+                <img src="assets/img/kapychino.jpg" alt="Северное сияние" style="width:100%">
+                <h3>Капучино</h3>
+                <p>Кофейный напиток на основе эспрессо
+                    с добавлением молочной пены. Капучино
+                    состоит из трех ингредиентов,
+                    смешиваемых в одинаковых пропорциях:
+                    на 1/3 эспрессо приходится столько
+                    же горячего молока и молочной пены.
+                    Все составляющие напитка должны быть
+                    высокой температуры.</p>
+            </div>
+        </div>
+
+        <div class="column nature">
+            <div class="content">
+                <img src="assets/img/amerikano.jpg" alt="Природа" style="width:100%">
+                <h3>Американо</h3>
+                <p>Это эспрессо с добавлением горячей
+                    воды. Допускается разбавление эспрессо
+                    водой в соотношении 1:1, 1:2 или 1:4.
+                    Классическая пропорция — 1:1, но вы
+                    можете приготовить американо так, как
+                    вам нравится. Чем больше воды, тем менее
+                    концентрированным получится напиток.</p>
+            </div>
+        </div>
+
+        <div class="column cars">
+            <div class="content">
+                <img src="assets/img/latte.jpg" alt="Горы" style="width:100%">
+                <h3>Латте</h3>
+                <p> В Италии латте готовится в домашних
+                    условиях и обычно пьётся только до
+                    обеда. Для изготовления латте используется
+                    мока и чашка подогретого молока.
+                    Соотношение эспрессо и
+                    взбитого молока позволяет
+                    получить наилучшие вкусовые,
+                    свойства напитка.</p>
+            </div>
+        </div>
+
+        <div class="column cars">
+            <div class="content">
+                <img src="assets/img/frappe.jpg" alt="Горы" style="width:100%">
+                <h3>Фраппе</h3>
+                <p>Холодный кофейный напиток, состоящий из кофе (двойной эспрессо)
+                    и молока. Все компоненты
+                    должны быть холодными и взбитыми в шейкере
+                    или миксере до однородной смеси. Также часто
+                    в качестве основного ингредиента добавляют
+                    мороженое.</p>
+            </div>
+        </div>
+
+        <div class="column cars">
+            <div class="content">
+                <img src="assets/img/irlandia.jpg" alt="Горы" style="width:100%">
+                <h3>Кофе по-ирландски</h3>
+                <p>Кофейный напиток, который относят в
+                    категорию коктейлей со сливками, на
+                    основе ирландского виски, чёрного кофе,
+                    взбитых сливок и коричневого сахара.
+                    Входит в число официальных коктейлей
+                    Международной ассоциации барменов,
+                    категория «Современная классика».</p>
+            </div>
+        </div>
+
+        <div class="column people">
+            <div class="content">
+                <img src="assets/img/mokachino.jpg" alt="Горы" style="width:100%">
+                <h3>Моккочино</h3>
+                <p>Сочетает три вкусовых
+                    качества: шоколада, терпкость
+                    кофе и сливки. Многие утверждают, что
+                    подобный состав напоминает десерт. Однако
+                    в качестве ингредиентов используется вода и 7г
+                    молотых обжаренных зерен.
+                    Для классического рецепта также понадобятся:
+                    горячий шоколад, жирное молоко и взбитые сливки.</p>
+            </div>
+        </div>
+
+        <div class="column people">
+            <div class="content">
+                <img src="assets/img/tyretskii.jpg" alt="Горы" style="width:100%">
+                <h3>Кофе по-турецки</h3>
+                <p>Крепкий кофейный напиток с
+                    добавлением специй, готовящийся
+                    из мелко молотых кофейных зерен.
+                    Традиционно его варят в турке на
+                    открытом маленьком огне, который не
+                    позволяет кофе вскипеть, что приведет
+                    к потере вкуса и аромата. Обладает
+                    высокой концентрацией кофеина. Поэтому он носит звание: крепкий кофе.</p>
+            </div>
+        </div>
+
+        <div class="column people">
+            <div class="content">
+                <img src="assets/img/flat.jpg" alt="Горы" style="width:100%">
+                <h3>Флэт уайт</h3>
+                <p>Кофейный напиток, состоящий из
+                    несильно вспененного молока и двойной
+                    порции эспрессо. На 110 мл молока
+                    приходится примерно 60 мл кофе. От
+                    латте или капучино он отличается более
+                    выраженным кофейным вкусом с присущей
+                    горчинкой и мягким молочным послевкусием, после которого вы полюбите его навсегда.  </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<a class="view-more" href="recepti.html">ДАЛЕЕ</a>
+<footer class="footer">
+    <div class="container container-centered">
+        <div class="footer-flex">
+            <div class="footer-wrap about-us">
+                <h2 class="footer-title">КОФЕ</h2>
+                <hr class="footer-line">
+                <p class="section-description">Кофе - один из самых популярных напитков по всему миру.
+                    Он обладает уникальным вкусом и ароматом, и готовится из
+                    зерен кофейного дерева.</p>
+                <div class="team-icons">
+                    <img src="assets/img/8.png" alt="ball">
+                    <img src="assets/img/9.png" alt="bе">
+                    <img src="assets/img/10.png" alt="twitter">
+                </div>
+            </div>
+            <div class="recent-posts">
+                <h2 class="footer-title">ИНТЕРЕСНЫЕ ВЕЩИ</h2>
+                <hr class="footer-line">
+                <section class="article">
+                    <article>
+                        <img src="assets/img/11.jpg" alt="magazine">
+                        <p>ПОДБОР</p>
+                        <a class="recent-posts-link magazine" href="podbor.html">ПОДБОР</a>
+                    </article>
+                    <article>
+                        <img src="assets/img/12.jpg" alt="ui-desigh">
+                        <p>ДОБРО</p>
+                        <a class="recent-posts-link ui-design" href="dobro.html">ДОБРО</a>
+                    </article>
+                    <article>
+                        <img src="assets/img/13.jpg" alt="photography">
+                        <p>ВИДЫ</p>
+                        <a class="recent-posts-link photography" href="vid.html">ВИДЫ</a>
+                    </article>
+                    <article>
+                        <img src="assets/img/14.jpg" alt="book">
+                        <p>ТОП 9</p>
+                        <a class="recent-posts-link book" href="topp.html">ТОП 9</a>
+                    </article>
+                    <article>
+                        <img src="assets/img/15.jpg" alt="ui-design">
+                        <p>РЕЦЕПТЫ</p>
+                        <a class="recent-posts-link ui-design" href="recepti.html">РЕЦЕПТЫ</a>
+                    </article>
+                    <article>
+                        <img src="assets/img/16.jpg" alt="ui-design2">
+                        <p>АЛКО</p>
+                        <a class="recent-posts-link ui-design2" href="alko.html">АЛКО</a>
+                    </article>
+                </section>
+
+            </div>
+            <div id="contact-us" class="footer-wrap contacts">
+                <h2 class="footer-title">СВЯЗЬ</h2>
+                <hr class="footer-line">
+                <ul>
+                    <li>Тихий городок</li>
+                    <li>Под название</li>
+                    <li> <a>Томск вроде </a></li>
+                    <li><a>Мой телефон: +896435465453</a></li>
+                    <li> <a>Типа ещё один: +86754654865</a></li>
+                </ul>
+                <div class="container">
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="comment-name"  placeholder="Типа сюда ваше имя...">
+                        </div>
+                        <input class="email" type="email" placeholder="Тут почту пожалуйста...">
+                        <div class="form-group">
+                            <textarea type="password" class="form-control" id="comment-body" placeholder="И вашу кредитку, спасибо..."></textarea>
+                        </div>
+                        <div class="form-group form-check text-right">
+                            <button type="submit" id="comment-add" class="btn1 btn-primary">Отправить... Ха-ха, эта хрень не работает</button>
+                        </div>
+                    </form>
+                    <div class="row1">
+                        <div class="col-lg-12">
+                            <h2 class="text-center">
+                                Ваши добрые отзывы:
+                            </h2>
+                        </div>
+                        <div class="col-lg-6">
+                            <div id="comment-field">:</div>
+                        </div>
+                        <div class="col-lg-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<script src="assets/js/comment.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+
+</html>

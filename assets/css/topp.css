@@ -1,0 +1,696 @@
+body {
+    width: auto;
+    margin: auto;
+    text-align: center;
+    background-color: #bbbbbb;
+    font-family: Arial, sans-serif;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-image: url("../img/20.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (orientation: portrait) {
+    #toolbar {
+        width: 100%;
+    }
+}
+
+
+@media screen and (orientation: landscape) {
+    #toolbar {
+        position: fixed;
+        width: 2.65em;
+        height: 100%;
+    }
+
+}
+header {
+    height: auto;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+}
+.head1 {
+    height: 900px;
+    width: 100%;
+    background-image: url("../img/6.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 37px 0 63px;
+
+}
+.head2 {
+    height: 900px;
+    width: 100%;
+    background-image: url("../img/7.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 37px 0 63px;
+
+}
+.menu-main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    list-style: none;
+    background: black;
+}
+
+.menu-main li {
+    display: inline-block;
+}
+
+.menu-main li:after {
+    color: #606060;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menu-main li:last-child:after {
+    content: none;
+}
+
+.menu-main a {
+    text-decoration: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 0 0 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .3s;
+}
+
+.menu-main a, .menu-main a:visited {
+    color: white;
+}
+
+.menu-main a.current, .menu-main a:hover {
+    color: #feb386;
+}
+
+.menu-main a:before,
+.menu-main a:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    left: 50%;
+    background: #feb386;
+    transition: .8s;
+}
+
+.menu-main a:hover:before, .menu-main .current:before {
+    left: 0;
+}
+
+.menu-main a:hover:after, .menu-main .current:after {
+    right: 0;
+}
+
+@media (max-width: 550px) {
+    .menu-main {
+        padding-top: 0;
+    }
+
+    .menu-main li {
+        display: block;
+    }
+
+    .menu-main li:after {
+        content: none;
+    }
+
+    .menu-main a {
+        padding: 25px 0 20px;
+        margin: 0 30px;
+    }
+}
+.header_title {
+    display: block;
+    color: #ffffff;
+    font-size: 55px;
+    max-width: 800px;
+    margin: 95px auto 70px;
+    font-weight: 500;
+    text-align: center;
+height: auto;
+}
+.text {
+
+    color: #ffffff;
+    font-size: 25px;
+    display: block;
+    margin: 20px auto 0;
+}
+.text2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 25px;
+    display: block;
+    margin: 50px auto -50px;
+}
+.text3 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 25px;
+    display: block;
+    margin: 70px auto 0;
+}
+.view-more {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding-left: 16px;
+    text-align: left;
+    background-color: #6018a7;
+    width: 185px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 25px;
+    background-repeat: no-repeat;
+    background-position: right 18px center;
+    margin: 50px auto 50px;
+}
+.view-more:hover{
+    opacity: 0.8;
+}
+.footer {
+    height: 100%;
+    padding: 4px;
+    background-color: #1d1d1d;
+    color: #ffffff;
+
+}
+
+.footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.footer-wrap {
+    flex-grow: 1;
+    max-width: 330px;
+    max-height: 450px;
+}
+
+.footer-line {
+    width: 30px;
+    height: 2px;
+    border: none;
+    background-color: #ff0000;
+}
+
+.footer-title {
+    display: block;
+    margin: 28px auto 13px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.recent-posts-link:hover {
+    opacity: 0.8;
+}
+
+.recent-posts .article {
+    list-style-type: none;
+    display: block;
+    text-align: center;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.recent-posts img {
+    float: left;
+    padding-right: 8px;
+}
+
+.recent-posts article {
+    display: block;
+    font-size: 16px;
+    text-align: left;
+}
+
+.recent-posts article p {
+    margin: 12px;
+}
+
+.recent-posts article a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.recent-posts-link {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+
+.magazine {
+    background-color: #546fd1;
+}
+
+.ui-design {
+    background-color: #ff0077;
+}
+.ui-design2 {
+    background-color: #00ff7b;
+}
+
+.photography{
+    background-color: #eab908;
+}
+
+.book {
+    background-color: #f304bf;
+}
+
+.contacts ul {
+    list-style-type: none;
+    text-align: center;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.contacts ul li {
+    font-size: 14px;
+}
+
+.contacts ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.form {
+    margin-top: 28px;
+}
+
+.form-control,
+.email,
+.textarea {
+    background-color: #42155a;
+    border: none;
+    margin: 0 0 2px;
+    width: 322px;
+    padding: 4px;
+    display: block;
+}
+
+.text1 {
+    border-radius: 4px 4px 0 0;
+}
+
+.textarea {
+    height: 131px;
+    resize: none;
+}
+
+.btn1 {
+    background-color: #4d2b9b;
+    display: block;
+    width: 100%;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 300;
+    border-radius: 0 0 4px 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.container-centered {
+    text-align: center;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+.welcom {
+    font-size: 15px;
+    text-align: center;
+    color: #ffffff;
+}
+.zagolovok {
+    font-size: 26px;
+    left: 30%;
+    right: 20%;
+    text-align: center;
+    color: #ffffff;
+}
+.textpodbor {
+    font-size: 20px;
+    position: absolute;
+    margin-top: 3%;
+    left: 27%;
+    margin-right: 25%;
+
+}
+.b1 {
+    font-size: 20px;
+}
+
+.b2 {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.logo {
+    margin: 0;
+}
+.polza {
+    padding-top: 1%;
+
+    text-align: center;
+}
+.asd {
+    max-width: 1170px;
+    margin: 30px 0 30px;
+    position: relative;
+}
+.circle1 {
+    margin-top: 25px;
+    margin-left: 25px;
+    text-decoration: none;
+    border: 0.1875em solid cornflowerblue;
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+    float: left;
+    display: block;
+    background-position: center;
+
+}
+.a1 {
+    position: center;
+    color: cornflowerblue;
+    font-size: 40px;
+    margin-top: 7px;
+    margin-left: 34%;
+}
+.tonys {
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 135px;
+    margin-right: 10%;
+    position: center;
+    text-align: center;
+    color: white;
+}
+.circle2 {
+    margin-left: 25px;
+    margin-top: 90px;
+    text-decoration: none;
+    border: 0.1875em solid cornflowerblue;
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+
+
+}
+.a2 {
+    position: center;
+    color: cornflowerblue;
+    font-size: 40px;
+    margin-top: 7px;
+    margin-left: 34%;
+}
+.radikal {
+    font-size: 30px;
+    margin-top: -100px;
+    margin-left: 135px;
+    margin-right: 10%;
+    position: center;
+    color: white;
+}
+.circle3 {
+    margin-left: 25px;
+    margin-top: 10px;
+    text-decoration: none;
+    border: 0.1875em solid cornflowerblue;
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+    float: left;
+    display: block;
+    background-position: center;
+}
+.a3 {
+    position: center;
+    color: cornflowerblue;
+    font-size: 40px;
+    margin-top: 7px;
+    margin-left: 34%;
+}
+.dipins {
+    font-size: 30px;
+    margin-top: 80px;
+    margin-left: 135px;
+    margin-right: 10%;
+    color: white;
+}
+.section-what-we-do {
+    width: 100%;
+    color: #ffffff;
+    padding: 37px 0 63px;
+}
+.section-title {
+    display: block;
+    margin: 0 auto 13px;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+.lorem {
+    height: auto;
+    width: 284px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px;
+    margin:25px 45px;
+}
+
+.lorem-logo {
+    width: 142px;
+    height: 142px;
+    border-radius: 26px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.lorem-camera {
+    background-image: url("../img/I.png");
+}
+
+.lorem-speed {
+    background-image: url("../img/II.png");
+}
+
+.lorem-case {
+    background-image: url("../img/noroot.png");
+}
+
+.row {
+    margin: 8px -16px 0 200px;
+}
+
+/* Добавить отступы между каждым столбцом (если вы хотите) */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Создайте четыре одинаковых столбца, которые плавают рядом друг с другом */
+.column {
+    float: left;
+    width: 25%;
+height: auto;
+    display: none;
+}
+
+/* Очистить поплавки после строк */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Содержание */
+.content {
+    background-color: white;
+    padding: 10px;
+    height: auto;
+}
+
+
+.main {
+    max-width: 1350px;
+    margin: auto;
+    height: auto;
+}
+
+/* Стиль изображения, используемого для запуска модального */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* Модальный (фон) */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    padding-top: 100px; /* Расположение коробки */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полный высота */
+    overflow: auto; /* Включите прокрутку, если это необходимо */
+    background-color: rgb(0,0,0); /* Цвет запасной вариант */
+    background-color: rgba(0,0,0,0.9); /* Черный с непрозрачностью */
+    height: auto;
+}
+
+/* Модальное содержание (изображение) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 20%;
+    max-width: 700px;
+    height: auto;
+}
+
+/* Заголовок модального изображения ( текст изображения) - та же ширина, что и изображение */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Добавить анимацию - величение модели */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* Кнопка закрытия */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Ширина изображения на меньших экранах */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+    .row {
+        margin: 40px;
+        padding: 8px;
+    }
+    .row,
+     .row > .column {
+         padding: 0;
+     }
+}
+
+/* Адаптивный макет - делает два столбца стека друг на друга, а не рядом друг с другом */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+
+    }
+    .row {
+        margin: 10px;
+        padding: 0;
+    }
+
+}
+
+/* Стиль кнопок */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Добавить серый цвет фона при наведении курсора мыши */
+.btn:hover {
+    background-color: #ddd;
+}
+
+/* Добавить темный цвет фона для активной кнопки */
+.btn.active {
+    background-color: #843eff;
+    color: white;
+}
+/* В класс "show" добавляется к отфильтрованные элементы */
+.show {
+    display: block;
+}
+
+.row1 {
+    height: 100%;
+    padding: 10px 0 37px;
+    background-color: rgba(142, 0, 255, 0.31);
+}

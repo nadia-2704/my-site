@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/alko.css">
+
+
+</head>
+<body>
+<header class="header" role="banner">
+    <div class="page-container">
+        <div class="page-container-inner">
+
+            <footer>
+                <ul class="menu-main">
+                    <li><a href="podbor.html">подбор</a></li>
+                    <li><a href="dobro.html">добро</a></li>
+                    <li><a href="vid.html">виды</a></li>
+                    <a href= "index.html"><img class="logo" src="assets/img/home-1-slider-img-2.png" height="82"></img> </a>
+                    <li><a href="topp.html">топ 9</a></li>
+                    <li><a href="recepti.html">рецепты</a></li>
+                    <li><a href="alko.html">алко</a></li>
+                </ul>
+            </footer>
+
+            <div>
+                <footer class = "welcom">
+                    <div><h2>welcom to coofe</h2></div>
+                </footer>
+                <footer class = "zagolovok">
+                    <div><h2>АЛКО</h2></div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="section-what-we-do">
+    <div class="container container-centered">
+
+        <div class="lorem">
+
+            <h3>Алкоголь и кофеин</h3>
+            <br> Кофе перед спиртным.
+            <br> <br> Если выпить чашечку кофе
+            минут за 30 до застолья, то напиток будет
+            совсем нелишним. Он позволит значительно
+            уменьшить вред этанола на организм.
+            Кофеин, выпитый перед принятием алкоголя,
+            запустит выработку
+            специальных компонентов в печени, которые
+            быстро и активно расщепят алкоголь.
+            <br> <br>  Одновременный прием двух напитков.
+            Комбинация ароматного кофе с коньяком
+            считается классическим сочетанием.
+            Однако оно несет серьезный риск для
+            здоровья. Ведь эти напитки воздействуют
+            на организм совершенно по-разному.
+
+            <br>  <br> Кофе после спиртного.
+            Способен ли бодрящий напиток помочь
+            протрезветь? К сожалению, это еще один
+            распространенный миф, который часто приводит
+            к тяжелым последствиям. Выпитый напиток дарит
+            иллюзорное ощущение трезвости, приводящее к
+            неправильным решениям (например, сесть за руль).
+
+        </div>
+        <div class="lorem">
+
+
+            <br> Любителям алкогольных коктейлей с кофе
+            следует придерживаться правил предосторожности,
+            а именно:
+
+            <br><br> 1. Исключить сочетание кофеина со спиртным
+            при малейших подозрениях на сердечные заболевания.
+
+            <br><br>2.за один раз выпито более 2 бокалов коктейля
+            необходимо восстановить баланс жидкости в
+            организме путем приема готовых аптечных составов для регидратации
+
+            организма и обильным ежечасным питьем.
+            <br><br> 3. При самостоятельном приготовлении кофейных
+            напитков с алкоголем следует точно следовать
+            рецептам, не увеличивая дозы компонентов. Такие
+            коктейли чреваты сильным похмельем, если объем
+            спиртного превышает 30 мл, а кофе – 100 мл.
+
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="assets/img/77.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="assets/img/78.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="assets/img/79.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="assets/img/80.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+        </div>
+
+        <!-- Модальный / Лайтбокс -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="assets/img/5.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="assets/img/23.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="assets/img/24.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="assets/img/25.jpg" style="width:100%">
+                </div>
+
+                <!-- Вперед/назад элементы управления -->
+
+
+                <!-- Текст подписи -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Элементы управления миниатюрами изображений -->
+                <div class="column">
+                    <img class="demo" src="assets/img/77.jpg" onclick="currentSlide(1)" alt="Кофе 1">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="assets/img/78.jpg" onclick="currentSlide(2)" alt="Кофе 2">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="assets/img/79.jpg" onclick="currentSlide(3)" alt="Кофе 3">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="assets/img/80.jpg" onclick="currentSlide(4)" alt="Кофе 4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<a class="view-more" href="index.html">ГЛАВНАЯ</a>
+<footer class="footer">
+    <div class="container container-centered">
+        <div class="footer-flex">
+            <div class="footer-wrap about-us">
+                <h2 class="footer-title">КОФЕ</h2>
+                <hr class="footer-line">
+                <p class="section-description">Кофе - один из самых популярных напитков по всему миру.
+                    Он обладает уникальным вкусом и ароматом, и готовится из
+                    зерен кофейного дерева.</p>
+                <div class="team-icons">
+                    <img src="assets/img/8.png" alt="ball">
+                    <img src="assets/img/9.png" alt="bе">
+                    <img src="assets/img/10.png" alt="twitter">
+                </div>
+            </div>
+            <div class="recent-posts">
+                <h2 class="footer-title">ИНТЕРЕСНЫЕ ВЕЩИ</h2>
+                <hr class="footer-line">
+                <section class="article">
+                    <article>
+                        <img src="assets/img/11.jpg" alt="magazine">
+                        <p>ПОДБОР</p>
+                        <a class="recent-posts-link magazine" href="podbor.html">ПОДБОР</a>
+                    </article>
+                    <article>
+                        <img src="assets/img/12.jpg" alt="ui-desigh">
+                        <p>ДОБРО</p>
+                        <a class="recent-posts-link ui-design" href="dobro.html">ДОБРО</a>
+                    </article>
+                    <article>
+                        <img src="assets/img/13.jpg" alt="photography">
+                        <p>ВИДЫ</p>
+                        <a class="recent-posts-link photography" href="vid.html">ВИДЫ</a>
+                    </article>
+                    <article>
+                        <img src="assets/img/14.jpg" alt="book">
+                        <p>ТОП 9</p>
+                        <a class="recent-posts-link book" href="topp.html">ТОП 9</a>
+                    </article>
+                    <article>
+                        <img src="assets/img/15.jpg" alt="ui-design">
+                        <p>РЕЦЕПТЫ</p>
+                        <a class="recent-posts-link ui-design" href="recepti.html">РЕЦЕПТЫ</a>
+                    </article>
+                    <article>
+                        <img src="assets/img/16.jpg" alt="ui-design2">
+                        <p>АЛКО</p>
+                        <a class="recent-posts-link ui-design2" href="alko.html">АЛКО</a>
+                    </article>
+                </section>
+
+            </div>
+            <div id="contact-us" class="footer-wrap contacts">
+                <h2 class="footer-title">СВЯЗЬ</h2>
+                <hr class="footer-line">
+                <ul>
+                    <li>Тихий городок</li>
+                    <li>Под название</li>
+                    <li> <a>Томск вроде </a></li>
+                    <li><a>Мой телефон: +896435465453</a></li>
+                    <li> <a>Типа ещё один: +86754654865</a></li>
+                </ul>
+                <div class="container">
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="comment-name"  placeholder="Типа сюда ваше имя...">
+                        </div>
+                        <input class="email" type="email" placeholder="Тут почту пожалуйста...">
+                        <div class="form-group">
+                            <textarea type="password" class="form-control" id="comment-body" placeholder="И вашу кредитку, спасибо..."></textarea>
+                        </div>
+                        <div class="form-group form-check text-right">
+                            <button type="submit" id="comment-add" class="btn btn-primary">Отправить... Ха-ха, эта хрень не работает</button>
+                        </div>
+                    </form>
+                    <div class="row1">
+                        <div class="col-lg-12">
+                            <h2 class="text-center">
+                                Ваши добрые отзывы:
+                            </h2>
+                        </div>
+                        <div class="col-lg-6">
+                            <div id="comment-field">:</div>
+                        </div>
+                        <div class="col-lg-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<script src="assets/js/comment.js"></script>
+<script src="assets/js/alko.js"></script>
+</body>
+</html>
